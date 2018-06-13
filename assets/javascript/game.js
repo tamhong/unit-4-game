@@ -9,12 +9,12 @@
 -check after each click if user number = to winning number
 
 */
+
 function randomNumber (x, y) {
     return Math.floor(Math.random() * ((x-y)+1) +y);
 }
 
-var computerChoice = Math.floor(Math.random() * ((120-19)+1) +19);
-Math.floor(Math.random() * 120 + 19);
+var computerChoice = randomNumber(120, 19);
 
 var winNumDisplay=$("#winning-number").text("Winning Number: " + computerChoice)
 
@@ -87,6 +87,9 @@ function game (crystalId, crystalNum) {
         if (userScore > computerChoice) {
             losses++
         }
+        $("#user-number").text("Current Total: " + userScore);
+        $("#wins").text("Wins: " + wins);
+        $("#losses").text("Losses: " +losses)
     })
 }
 
@@ -98,4 +101,22 @@ game ("#heart", crystal3);
 
 game ("#five", crystal4);
 
+$(document).on("click", ".crystal-images", function() {
+    if (userScore === computerChoice) {
+        userScore = 0;
+        computerChoice = randomNumber (120, 19);
+        $("#user-number").text("Current Total:" +userScore);
+        $("#winning-number").text("Winning Number: " +computerChoice);
+    }
+    if (userScore > computerChoice) {
+        userScore = 0;
+        computerChoice = randomNumber (120, 19);
+        $("#user-number").text("Current Total:" +userScore);
+        $("#winning-number").text("Winning Number: " +computerChoice);
+    }
+
+})
+
+
+//var winNumDisplay=$("#winning-number").text("Winning Number: " + computerChoice)
 
