@@ -2,3 +2,44 @@
     width: 100px;
     height: 100px;
 }
+
+h1 {
+    font-family: 'Codystar', cursive;
+    margin-top: 200px;
+    width: 100%;
+    font-size: 50px;
+    text-align: center;
+}
+
+#crystals {
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+#text {
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    line-height: 25px;
+}
+
+#game-alert {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#container {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: auto;
+    margin-left: auto;
+}
+

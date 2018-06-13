@@ -5,12 +5,18 @@
     <title>title</title>
     <!--Reset CSS-->
     <link rel = "stylesheet" type = "text/css" href = "assets/css/reset.css">
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Codystar|Montserrat" rel="stylesheet">
     <!--Personal CSS-->
     <link rel = "stylesheet" type = "text/css" href = "assets/css/style.css">
     <!--JQuery-->
     <script type = "text/javascript" src ="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   </head>
   <body>
+
+    <div id = "container">
+
+    <div id= "content">
 
     <h1>Crystal Collector</h1>
 
@@ -23,15 +29,22 @@
 
     </div>
 
-    <div id= "instructions">game insructions</div>
+    <div id ="text">
 
-    <div id = "winning-number"> Winning Number </div>
+    <p id= "game-alert"> Click a crystal to start! </p>
 
-    <div id = "user-number"> User Number </div>
+    <p id = "winning-number"> Winning Number: </p>
 
-    <div id= "scoreboard">
-        <p id="wins">Wins: </div>
-        <p id="losses">Losses:</div>
+    <p id = "user-number"> Current Total: 0</p>
+
+    <p id="wins">Wins: 0 </p>
+    
+    <p id="losses">Losses: 0</p>
+
+    </div>
+
+    </div>
+
     </div>
 
     <script type = "text/javascript" src ="assets/javascript/game.js"></script>
