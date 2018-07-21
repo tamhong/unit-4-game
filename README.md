@@ -1,6 +1,6 @@
 # Crystal Collector
 
-Objective: Match "current total" with "winning number" by collecting crystals of appropriate value.
+    * Objective: Match "current total" with "winning number" by collecting crystals of appropriate value.
 
 # Instructions
     *Each crystal is assigned a random number between 1 and 12. Number remains the same until end of current game.
